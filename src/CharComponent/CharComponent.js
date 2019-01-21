@@ -10,7 +10,7 @@ const charComponent = (props) => {
     }
 
     return (
-        <div style={style}>Example txt</div>
+        <div style={style}>{props.letter}</div>
     )
 }
 
