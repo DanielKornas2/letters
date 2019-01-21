@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ValidationComponent from './ValidationComponent/ValidationComponent'
 
 class App extends Component {
   constructor(){
@@ -19,6 +20,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <input type="text" value={this.state.text} onChange={this.handleInputChange} />
+        <ValidationComponent textLength = {this.state.text.length} />
       </React.Fragment>
     );
   }
